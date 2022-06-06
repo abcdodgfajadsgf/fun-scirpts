@@ -87,7 +87,7 @@ lol.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
 lol.Position = UDim2.new(0.5631271, 0, 0.705006361, 0)
 lol.Size = UDim2.new(0, 136, 0, 64)
 lol.Font = Enum.Font.SourceSans
-lol.Text = "ultra small(settings: width = 70%, height = 80%, body type = 0%)"
+lol.Text = "ultra small(settings: width = 70%, height = 90%, body type = 0%)"
 lol.TextColor3 = Color3.fromRGB(0, 0, 0)
 lol.TextScaled = true
 lol.TextSize = 14.000
