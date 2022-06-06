@@ -1,0 +1,107 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local TextLabel = Instance.new("TextLabel")
+local TextButton = Instance.new("TextButton")
+local TextButton_2 = Instance.new("TextButton")
+local TextButton_3 = Instance.new("TextButton")
+local TextButton_4 = Instance.new("TextButton")
+local TextButton_5 = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+ScrollingFrame.Parent = ScreenGui
+ScrollingFrame.Active = true
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+ScrollingFrame.Position = UDim2.new(0.383152157, 0, 0.119284302, 0)
+ScrollingFrame.Size = UDim2.new(0, 242, 0, 278)
+
+TextLabel.Parent = ScrollingFrame
+TextLabel.BackgroundColor3 = Color3.fromRGB(4, 4, 4)
+TextLabel.Position = UDim2.new(-6.73404429e-05, 0, 0, 0)
+TextLabel.Size = UDim2.new(0, 242, 0, 50)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Fe scripts"
+TextLabel.TextColor3 = Color3.fromRGB(170, 0, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+TextButton.Parent = ScrollingFrame
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.Position = UDim2.new(-0.00114536285, 0, 0.0556659959, 0)
+TextButton.Size = UDim2.new(0, 98, 0, 50)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "gale fighter(R6)"
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextScaled = true
+TextButton.TextSize = 14.000
+TextButton.TextWrapped = true
+TextButton.MouseButton1Down:Connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/h9y0ZD3c", true))()
+end)
+
+TextButton_2.Parent = ScrollingFrame
+TextButton_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_2.Position = UDim2.new(0.540176988, 0, 0.0556659959, 0)
+TextButton_2.Size = UDim2.new(0, 98, 0, 50)
+TextButton_2.Font = Enum.Font.SourceSans
+TextButton_2.Text = "Native(CRINGE WARNING!!!)"
+TextButton_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_2.TextScaled = true
+TextButton_2.TextSize = 14.000
+TextButton_2.TextWrapped = true
+TextButton_2.MouseButton1Down:Connect(function()
+	loadstring(game:HttpGetAsync("https://pastebin.com/raw/2MSTmKBa"))()
+end)
+
+
+TextButton_3.Parent = ScrollingFrame
+TextButton_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_3.Position = UDim2.new(-0.00114536285, 0, 0.113320068, 0)
+TextButton_3.Size = UDim2.new(0, 98, 0, 50)
+TextButton_3.Font = Enum.Font.SourceSans
+TextButton_3.Text = "grab items(WORKS ONLY ON UNANCHORED ITEMS)"
+TextButton_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_3.TextScaled = true
+TextButton_3.TextSize = 14.000
+TextButton_3.TextWrapped = true
+TextButton_3.MouseButton1Down:Connect(function()
+	loadstring(game:HttpGetAsync("https://paste.ee/r/7TOQF"))()
+end)
+
+
+TextButton_4.Parent = ScrollingFrame
+TextButton_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_4.Position = UDim2.new(0.539233685, 0, 0.113320082, 0)
+TextButton_4.Size = UDim2.new(0, 113, 0, 50)
+TextButton_4.Font = Enum.Font.SourceSans
+TextButton_4.Text = "trash talker"
+TextButton_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_4.TextScaled = true
+TextButton_4.TextSize = 14.000
+TextButton_4.TextWrapped = true
+TextButton_4.MouseButton1Down:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/abcdodgfajadsgf/trash-talker/main/ff", true))()
+end)
+
+TextButton_5.Parent = ScrollingFrame
+TextButton_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_5.Position = UDim2.new(-0.00114536285, 0, 0.178926438, 0)
+TextButton_5.Size = UDim2.new(0, 98, 0, 50)
+TextButton_5.Font = Enum.Font.SourceSans
+TextButton_5.Text = "gale fighter(R15)"
+TextButton_5.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_5.TextScaled = true
+TextButton_5.TextSize = 14.000
+TextButton_5.TextWrapped = true
+TextButton_5.MouseButton1Down:Connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/XhTSzvNU", true))()
+end)
