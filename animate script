@@ -20,11 +20,10 @@ ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 ScrollingFrame.Parent = ScreenGui
 ScrollingFrame.Active = true
 ScrollingFrame.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
-ScrollingFrame.Position = UDim2.new(0.383152157, 0, 0.119284302, 0)
+ScrollingFrame.Position = UDim2.new(0.00406489056, 0, 0, 0)
 ScrollingFrame.Size = UDim2.new(0, 242, 0, 278)
 ScrollingFrame.Active = true
 ScrollingFrame.Draggable = true
---ok
 
 TextLabel.Parent = ScrollingFrame
 TextLabel.BackgroundColor3 = Color3.fromRGB(4, 4, 4)
