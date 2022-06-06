@@ -1,0 +1,139 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local main = Instance.new("Frame")
+local name = Instance.new("TextLabel")
+local trash = Instance.new("TextButton")
+local inf = Instance.new("TextButton")
+local rage = Instance.new("TextButton")
+local lol = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+main.Name = "main"
+main.Parent = ScreenGui
+main.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+main.Position = UDim2.new(0.380434811, 0, 0.280318052, 0)
+main.Size = UDim2.new(0, 312, 0, 220)
+main.Active = true
+main.Draggable = true
+
+name.Name = "name"
+name.Parent = main
+name.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+name.Size = UDim2.new(0, 312, 0, 50)
+name.Font = Enum.Font.SourceSans
+name.Text = "fun lol"
+name.TextColor3 = Color3.fromRGB(255, 255, 255)
+name.TextScaled = true
+name.TextSize = 14.000
+name.TextWrapped = true
+
+trash.Name = "trash"
+trash.Parent = main
+trash.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+trash.Position = UDim2.new(-0.000975489616, 0, 0.223188162, 0)
+trash.Size = UDim2.new(0, 136, 0, 64)
+trash.Font = Enum.Font.SourceSans
+trash.Text = "TRASH TALKER"
+trash.TextColor3 = Color3.fromRGB(0, 0, 0)
+trash.TextScaled = true
+trash.TextSize = 14.000
+trash.TextWrapped = true
+trash.MouseButton1Down:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/abcdodgfajadsgf/trash-talker/main/ff", true))()
+end)
+
+inf.Name = "inf"
+inf.Parent = main
+inf.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+inf.Position = UDim2.new(0.5631271, 0, 0.223188162, 0)
+inf.Size = UDim2.new(0, 136, 0, 64)
+inf.Font = Enum.Font.SourceSans
+inf.Text = "INFINITE YIELD"
+inf.TextColor3 = Color3.fromRGB(0, 0, 0)
+inf.TextScaled = true
+inf.TextSize = 14.000
+inf.TextWrapped = true
+inf.MouseButton1Down:Connect(function()
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+end)
+
+rage.Name = "rage"
+rage.Parent = main
+rage.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+rage.Position = UDim2.new(-0.000975489616, 0, 0.705006361, 0)
+rage.Size = UDim2.new(0, 136, 0, 64)
+rage.Font = Enum.Font.SourceSans
+rage.Text = "Tall script(must have body type on 100%)"
+rage.TextColor3 = Color3.fromRGB(0, 0, 0)
+rage.TextScaled = true
+rage.TextSize = 14.000
+rage.TextWrapped = true
+rage.MouseButton1Down:Connect(function()
+	loadstring(game:HttpGet(('https://pastebin.com/raw/nSM6JfJc'),true))()
+end)
+
+lol.Name = "lol"
+lol.Parent = main
+lol.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+lol.Position = UDim2.new(0.5631271, 0, 0.705006361, 0)
+lol.Size = UDim2.new(0, 136, 0, 64)
+lol.Font = Enum.Font.SourceSans
+lol.Text = "ultra small(settings: width = 70%, height = 80%, body type = 0%)"
+lol.TextColor3 = Color3.fromRGB(0, 0, 0)
+lol.TextScaled = true
+lol.TextSize = 14.000
+lol.TextWrapped = true
+lol.MouseButton1Down:Connect(function()
+	local LocalPlayer = game:GetService("Players").LocalPlayer
+	local Character = LocalPlayer.Character
+	local Humanoid = Character:FindFirstChildOfClass("Humanoid")
+
+	local function rm()
+		for i,v in pairs(Character:GetDescendants()) do
+			if v:IsA("BasePart") then
+				if v.Name ~= "Head" then
+					for i,cav in pairs(v:GetDescendants()) do
+						if cav:IsA("Attachment") then
+							if cav:FindFirstChild("OriginalPosition") then
+								cav.OriginalPosition:Destroy()
+							end
+						end
+					end
+					v:FindFirstChild("OriginalSize"):Destroy()
+					if v:FindFirstChild("AvatarPartScaleType") then
+						v:FindFirstChild("AvatarPartScaleType"):Destroy()
+					end
+				end
+			end
+		end
+	end
+
+	rm()
+	wait(0.5)
+	Humanoid:FindFirstChild("BodyTypeScale"):Destroy()
+	wait(0.2)
+
+	rm()
+	wait(0.5)
+	Humanoid:FindFirstChild("BodyWidthScale"):Destroy()
+	wait(0.2)
+
+	rm()
+	wait(0.5)
+	Humanoid:FindFirstChild("BodyDepthScale"):Destroy()
+	wait(0.2)
+
+	rm()
+	wait(0.5)
+	Humanoid:FindFirstChild("HeadScale"):Destroy()
+	wait(0.2)
+end)
